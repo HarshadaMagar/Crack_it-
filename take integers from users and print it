@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int num1,num2;
+  printf("give me 2 numbers");
+  scanf("%d %d",&num1 ,&num2);
+  printf("first number is %d\n",num1);
+  printf("second number is %d\n",num2);
+
+return 0;
+}
