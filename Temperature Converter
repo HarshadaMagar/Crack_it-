@@ -1,14 +1,18 @@
+// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
     float c,f;
     printf("enter a temp in degree celcius : ");
-    scanf("%f \n",&c);
+    scanf("%f",&c);
+    f = (c * 9 / 5) + 32;
+    printf("Celcius Temperature in Fahrenheit = %.2f\n", f);
     
-    
-    printf("enter a  temp in fahranite : ");
-    scanf("%f \n",&c);
+    printf("enter a  temp in fahrenhite : ");
+    scanf("%f",&f);
 
+    c = (f - 32) * 5 / 9;
+    printf("Fahrenhit Temperature in Celsius = %.2f\n", c);
 
     return 0;
 }
