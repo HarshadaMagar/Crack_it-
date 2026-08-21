@@ -6,5 +6,5 @@ int main() {
   printf("first number is %d\n",num1);
   printf("second number is %d\n",num2);
 
-return 0;
+return 0
 }
