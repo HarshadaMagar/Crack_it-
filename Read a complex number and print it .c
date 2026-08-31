@@ -8,6 +8,6 @@ scanf("%f",&real);
 printf("enter a imaginary part:");
 scanf("%f",&img);
 
-printf("complex number = %.2f + %.2fi",real,img);
+printf("complex number = %.f + %.fi",real,img);
 return 0;
 }
