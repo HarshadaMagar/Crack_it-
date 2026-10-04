@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int a = 0;
+    int b = 1;
+    int next;
+    int sum = 0;
+    int previous = 0;
+    int last = 0;
+
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", a);
+
+        sum = sum + a;
+
+        previous = last;
+        last = a;
+
+        next = a + b;
+        a = b;
+        b = next;
+    }
+
+    printf("\nSum = %d", sum);
+
+    if (n >= 2)
+    {
+        printf("\nRatio of last two terms = %.2f",
+               (float)previous / last);
+    }
+
+    return 0;
+}
