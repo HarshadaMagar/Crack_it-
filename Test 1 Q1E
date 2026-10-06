@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, count = 0, sum = 0, negative = 0;
+    int smallest, largest;
+
+    do
+    {
+        printf("Enter a number (0 to stop): ");
+        scanf("%d", &n);
+
+        if (n != 0)
+        {
+            if (count == 0)
+            {
+                smallest = largest = n;
+            }
+
+            count++;
+            sum += n;
+
+            if (n < smallest)
+                smallest = n;
+
+            if (n > largest)
+                largest = n;
+
+            if (n < 0)
+                negative++;
+        }
+
+    } while (n != 0);
+
+    if (count == 0)
+    {
+        printf("No numbers were entered.\n");
+    }
+    else
+    {
+        printf("Count = %d\n", count);
+        printf("Sum = %d\n", sum);
+        printf("Average = %.2f\n", (float)sum / count);
+        printf("Smallest = %d\n", smallest);
+        printf("Largest = %d\n", largest);
+        printf("Negative numbers = %d\n", negative);
+    }
+
+    return 0;
+}
