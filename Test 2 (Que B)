@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int N, count = 0, sum = 0;
+
+    printf("Enter N: ");
+    scanf("%d", &N);
+
+    for(int i = 1; i <= N; i++)
+    {
+        if ((i % 3 == 0 || i % 5 == 0) &&
+            !(i % 3 == 0 && i % 5 == 0))
+        {
+            printf("%d ", i);
+            count++;
+            sum += i;
+        }
+    }
+
+    printf("\ncount = %d", count);
+    printf("\nsum = %d", sum);
+
+    return 0;
+}
